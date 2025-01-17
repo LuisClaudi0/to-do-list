@@ -1,7 +1,7 @@
 <h1>TO DO LIST</h1>
 
 <h2>📃📃 About</h2>
-<p>Project for to do list, with edit, check and delete tasks by developer Luis Claudio.</p>
+<p>Simple project for to do list with edit, check and delete tasks by developer Luis Claudio.</p>
 
 ## 🚀🚀 Technologies
 <div>
