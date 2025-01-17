@@ -271,8 +271,9 @@ p {
     background-size: 70%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     #main{
         width: 75%;
+        height: 80%;
     }
 }
