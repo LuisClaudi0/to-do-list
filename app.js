@@ -33,7 +33,8 @@ function sendTask(){
             let newInput = document.createElement('input');
             newInput.classList.add('task-format');
             newInput.classList.add('new-input');
-            document.querySelector('p').remove();
+            let div = event.currentTarget.parentNode;
+            div.querySelector('p').remove();
             div.prepend(newInput);
             div.prepend(check);
             newInput.focus();
@@ -66,7 +67,8 @@ function sendTask(){
         check.classList.add('button', 'done', 'invisible'); 
         check.addEventListener('click', function(){
             check.classList.toggle('invisible');
-            document.querySelector('p').classList.toggle('line-through');
+            let div2 = event.currentTarget.parentNode;
+            div2.querySelector('p').classList.toggle('line-through');
         });
 
         div.prepend(check);
@@ -84,3 +86,4 @@ function sendTask(){
 
 
 //colocar modo dark/white
+//arrumar erro de so marcar como feito a primeira tarefa
