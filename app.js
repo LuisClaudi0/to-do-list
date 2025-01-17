@@ -27,14 +27,33 @@ function sendTask(){
 
         let edit = document.createElement('button');
         edit.classList.add('button', 'edit');
+
         edit.addEventListener('click', function(){
+
             let newInput = document.createElement('input');
             newInput.classList.add('task-format');
             newInput.classList.add('new-input');
-            showTask.remove();
-            check.remove();
+            document.querySelector('p').remove();
             div.prepend(newInput);
             div.prepend(check);
+            newInput.focus();
+            newInput.addEventListener('keydown', function(){
+
+                if (event.key == "Enter") { 
+                    if(newInput.value != ''){
+                        let content = newInput.value;
+                        let showTask = document.createElement('p');
+                        showTask.textContent = content;
+                        showTask.classList.add('task-format');
+                        newInput.remove();
+                        div.prepend(showTask);
+                        div.prepend(check);
+                    } else {
+                        alert('Por favor, diga qual tarefa deseja adicionar!');
+                    }
+                }
+
+            })
         });
 
         let delet = document.createElement('button');
@@ -47,7 +66,7 @@ function sendTask(){
         check.classList.add('button', 'done', 'invisible'); 
         check.addEventListener('click', function(){
             check.classList.toggle('invisible');
-            showTask.classList.toggle('line-through')
+            document.querySelector('p').classList.toggle('line-through');
         });
 
         div.prepend(check);
@@ -62,3 +81,6 @@ function sendTask(){
         alert('Por favor, diga qual tarefa deseja adicionar!');
     }
 };
+
+//colocar meu nome no final da pagina
+//colocar modo dark/white

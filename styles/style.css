@@ -17,7 +17,9 @@ body {
     height: 100vh;
     background: linear-gradient(135deg, #0c2962, var(--first-color));
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #main {
@@ -57,9 +59,9 @@ body {
 
 #userInput {
     width: 60%;
-    padding: 1% 1%;
-    border-top-left-radius: 0.4rem;
-    border-bottom-left-radius: 0.4rem;
+    padding: 2% 2%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     border: 0;
     font-family: var(--font-mont);
 }
@@ -86,8 +88,6 @@ body {
     border: 3.2rem;
     background-color: var(--sec-color);
     border: var(--border-stats);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     display: flex;
     flex-direction: column;
     max-height: 80%; /* Altura máxima pra ativar o scroll vertical */
@@ -189,4 +189,19 @@ p {
 
 #tasks__camp::-webkit-scrollbar-track {
     background-color: none; /* Fundo do trilho */
+}
+
+.footer {
+    font-family: var(--font-krona);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: var(--sec-color);
+    width: 100%;
+    border-bottom: var(--border-stats);
+    border-right: var(--border-stats);
+    border-left: var(--border-stats);
+    margin: 0;
+    padding: 3% 0;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
