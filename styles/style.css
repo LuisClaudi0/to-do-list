@@ -85,9 +85,9 @@ body {
 #tasks__camp {
     width: 100%;
     height: 80%;
-    border: 3.2rem;
     background-color: var(--sec-color);
     border: var(--border-stats);
+    border-bottom: 0;
     display: flex;
     flex-direction: column;
     max-height: 80%; /* Altura máxima pra ativar o scroll vertical */

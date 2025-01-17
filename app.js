@@ -82,5 +82,5 @@ function sendTask(){
     }
 };
 
-//colocar meu nome no final da pagina
+
 //colocar modo dark/white
