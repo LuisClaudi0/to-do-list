@@ -85,5 +85,27 @@ function sendTask(){
 };
 
 
-//colocar modo dark/white
-//arrumar erro de so marcar como feito a primeira tarefa
+let darkMode = document.getElementById('mode');
+
+darkMode.addEventListener('click', function(){
+    darkMode.classList.toggle('light');
+    darkMode.classList.toggle('dark');
+
+    document.getElementById('body').classList.toggle('body-dark');
+    document.getElementById('body').classList.toggle('body-light');
+
+    document.getElementById('header').classList.toggle('header-light');
+    document.getElementById('header').classList.toggle('header-dark');
+
+    document.getElementById('form').classList.toggle('form-light');
+    document.getElementById('form').classList.toggle('form-dark');
+
+    document.getElementById('tasks__camp').classList.toggle('tasks__camp-light');
+    document.getElementById('tasks__camp').classList.toggle('tasks__camp-dark');
+
+    document.querySelector('footer').classList.toggle('footer-light');
+    document.querySelector('footer').classList.toggle('footer-dark');
+
+    document.getElementById('userInput').classList.toggle('userInput-light');
+    document.getElementById('userInput').classList.toggle('userInput-dark');
+});
